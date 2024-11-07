@@ -13,7 +13,7 @@ export default function Page() {
 
       {/* First section */}
       <main className={styles.main}>
-        <h2 className={styles.welcomeHeading}>Welcome to</h2>
+        <span className={styles.welcomeHeading}>Welcome to</span>
         <h1 className={styles.companyName}>TurkHair 🦃 Travels & Transplants</h1>
         <button
           className={styles.scrollPrompt}

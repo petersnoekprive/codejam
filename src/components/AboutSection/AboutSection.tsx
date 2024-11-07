@@ -3,9 +3,9 @@ import styles from './AboutSection.module.css';
 export default function AboutSection() {
   return (
     <>
-      <h6 className={styles.sectionHeading}>About Our Hairy Business</h6>
+      <h2 className={styles.sectionHeading}>About Our Hairy Business</h2>
       <div className={styles.aboutGrid}>
-        <img src="/company_logo.jpg" className={styles.companyLogo} />
+        <img src="/company_logo.jpg" className={styles.companyLogo} alt="bald man with sunglasses" />
         <div className={styles.about}>
           <div className={styles.establishedDate}>MAKING HEADS HAPPY SINCE 2024</div>
           <div className={styles.aboutText}>

@@ -3,7 +3,7 @@ import styles from './Services.module.css';
 export default function Services() {
   return (
     <>
-      <h4 className={styles.sectionHeading}>Our Hair-raising Services</h4>
+      <h2 className={styles.sectionHeading}>Our Hair-raising Services</h2>
       <div className={styles.servicesGrid}>
         {['The Istanbul Special', 'Bald & Beautiful Package', 'The Full Turkish Delight'].map(
           service => (
