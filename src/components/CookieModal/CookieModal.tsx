@@ -12,12 +12,13 @@ export const CookieModal = () => {
     <>
       {modalIsOpen && (
         <>
-          <div className={styles.modalContainer}>
+        <div className={styles.backdropContainer}>
+          <section className={styles.modalContainer} aria-labelledby='cookie_heading'>
             <div className={styles.modalHeader}>
-              <h1>🍪 Cookie Alert (Not the Baklava Kind) 🍪</h1>
-              <div onClick={handleModalClose} className={styles.modalCloseButton}>
+              <h1 id='cookie_heading'>🍪 Cookie Alert (Not the Baklava Kind) 🍪</h1>
+              <button onClick={handleModalClose} className={styles.modalCloseButton}>
                 ✂️
-              </div>
+              </button>
             </div>
             <div className={styles.modalContent}>
               <p>
@@ -38,16 +39,16 @@ export const CookieModal = () => {
                 </ul>
               </p>
               <div className={styles.buttonContainer}>
-                <div onClick={handleModalClose} className={styles.acceptButton}>
+                <button onClick={handleModalClose} className={styles.acceptButton}>
                   Make Me Hairy! 🦁
-                </div>
-                <div onClick={handleModalClose} className={styles.declineButton}>
+                </button>
+                <button onClick={handleModalClose} className={styles.declineButton}>
                   Stay Bald 😢
-                </div>
+                </button>
               </div>
             </div>
-          </div>
-          <div className={styles.backdrop} />
+          </section>
+        </div>
         </>
       )}
     </>
