@@ -3,11 +3,14 @@ import styles from './EmailSignupForm.module.css';
 export default function EmailSignupForm() {
   return (
     <>
-      <div className={styles.emailHeader}>🦃 TURKEY'S HOTTEST HAIR-MAIL LIST 🦃</div>
-      <form className={styles.emailForm} onSubmit={e => e.preventDefault()}>
+      <h2 className={styles.emailHeader} id='turkey_header'>🦃 TURKEY'S HOTTEST HAIR-MAIL LIST 🦃</h2>
+      <form className={styles.emailForm} onSubmit={e => e.preventDefault()} aria-labelledby='turkey_header'>
+        <label for='sign_up_email_input'>Email:</label>
         <input
           placeholder="drop ur email here if ur ready 2 get hairy"
           className={styles.emailInput}
+          id='sign_up_email_input'
+          type='email'
         />
         <button
           className={styles.submitButton}

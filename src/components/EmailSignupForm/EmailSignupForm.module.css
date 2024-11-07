@@ -35,7 +35,6 @@
   text-align: center;
 }
 
-.emailInput {
-  background-color: #ffff00;
-  color: #ff00ff;
+.emailInput:valid {
+  background-color: #11ff00;
 }

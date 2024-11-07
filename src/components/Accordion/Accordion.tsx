@@ -23,21 +23,12 @@ const Accordion = ({ items }: AccordionProps) => {
   return (
     <div className={styles.accordion}>
       {items.map((item, index) => (
-        <div key={index} className={styles.accordionItem}>
-          <div className={styles.accordionHeader} onClick={() => toggleContent(index)}>
-            <span>{item.title}</span>
-            <span id={`accordion-arrow-${index}`} className={styles.accordionArrow}>
-              ▼
-            </span>
-          </div>
-          <div
-            id={`accordion-content-${index}`}
-            className={styles.accordionContent}
-            style={{ display: 'none' }}
-          >
-            {item.content}
-          </div>
-        </div>
+        <section key={index} className={styles.accordionItem} aria-labelledby={`accordion-${index}`}>
+          <details className={styles.accordionHeader}>
+            <summary id={`accordion-${index}`}>{item.title}</summary>
+              {item.content}
+          </details>
+        </section>
       ))}
     </div>
   );
