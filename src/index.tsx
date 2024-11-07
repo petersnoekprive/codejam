@@ -15,12 +15,12 @@ export default function Page() {
       <main className={styles.main}>
         <h2 className={styles.welcomeHeading}>Welcome to</h2>
         <h1 className={styles.companyName}>TurkHair 🦃 Travels & Transplants</h1>
-        <Button
+        <button
           className={styles.scrollPrompt}
           onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Sign up for a hairy good time! →
-        </Button>
+        </button>
         <input placeholder="placeholder" style={{ width: 0, height: 0 }} />
       </main>
 
